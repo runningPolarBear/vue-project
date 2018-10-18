@@ -1,8 +1,8 @@
 {
-  "name": "platform",
+  "name": "vue-project",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "touna",
+  "description": "A vue project",
+  "author": "AlexHu",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --history-api-fallback --inline --progress --config build/webpack.dev.conf.js",
@@ -72,5 +72,13 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runningPolarBear/vue-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/runningPolarBear/vue-project/issues"
+  },
+  "homepage": "https://github.com/runningPolarBear/vue-project#readme"
 }
