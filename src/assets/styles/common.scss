@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+@import "./core/core";
+.span-1 {
+  flex: 1;
+}
+
+.bg-white {
+  background: white;
+}
+
+.font-din {
+  font-family: 'DIN';
+}
+
+
+/*
+**批量生成margin:0-40px  padding:0-40px
+*/
+
+@for $i from 1 through 50 {
+  $key: $i * 5;
+  .m-t-#{$key} {
+    margin-top: pxToRem($key);
+  }
+  .m-b-#{$key} {
+    margin-bottom: pxToRem($key);
+  }
+  .m-l-#{$key} {
+    margin-left: pxToRem($key);
+  }
+  .m-r-#{$key} {
+    margin-right: pxToRem($key);
+  }
+  .p-t-#{$key} {
+    padding-top: pxToRem($key);
+  }
+  .p-b-#{$key} {
+    padding-bottom: pxToRem($key);
+  }
+  .p-l-#{$key} {
+    padding-left: pxToRem($key);
+  }
+  .p-r-#{$key} {
+    padding-right: pxToRem($key);
+  }
+}
+
+$fontSizeArr: 11,
+12,
+13,
+14,
+15,
+16,
+18,
+24,
+26,
+28,
+30,
+32,
+36,
+38,
+40,
+44,
+80;
+@each $px in $fontSizeArr {
+  .fz-px-#{$px} {
+    font-size: pxToRem($px);
+  }
+}
+
+
+/*
+** ========== 文字对齐 ==========
+*/
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//粗体
+.fw-bold {
+  font-weight: bold;
+}
+
+.fc-white {
+  color: #fff;
+}
+
+.fc-21 {
+  color: #212121;
+}
+
+.fc-75 {
+  color: #757575;
+}
+
+.fc-c1 {
+  color: #C1C1C1;
+}

@@ -1,0 +1,44 @@
+.span-1 {
+  flex: 1;
+}
+
+.bg-white {
+  background: white;
+}
+
+.font-din {
+  font-family: 'DIN';
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//ДжЬх
+.fw-bold {
+  font-weight: bold;
+}
+
+.fc-white {
+  color: #fff;
+}
+
+.fc-21 {
+  color: #212121;
+}
+
+.fc-75 {
+  color: #757575;
+}
+
+.fc-c1 {
+  color: #C1C1C1;
+}
